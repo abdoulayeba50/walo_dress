@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RICHARD TOLL — Terre de culture, terre d'avenir</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">RICHARD TOLL</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Accueil</a></li>
+        <li><a href="#boutique" class="nav-link">Boutique</a></li>
+        <li><a href="#histoire" class="nav-link">Notre Histoire</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-cart" id="cartBtn" aria-label="Panier">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/Img1.png" alt="Château de Richard-Toll" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">— Sénégal, Saint-Louis</p>
+      <h1 class="hero-title reveal-up delay-1">RICHARD<br /><span>TOLL</span></h1>
+      <p class="hero-subtitle reveal-up delay-2">Terre de culture, terre d'avenir.</p>
+      <p class="hero-desc reveal-up delay-3">
+        Une collection inspirée de l'histoire, de la culture,<br />
+        du patrimoine et des richesses de Richard-Toll.
+      </p>
+      <a href="#boutique" class="btn btn-hero reveal-up delay-4">Découvrir la collection</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== NOTRE HISTOIRE ========== -->
+  <section class="histoire" id="histoire">
+    <div class="container">
+      <div class="section-label reveal-fade">Notre Histoire</div>
+      <div class="histoire-grid">
+        <div class="histoire-text reveal-left">
+          <h2 class="section-title">Une ville,<br /><em>une identité.</em></h2>
+          <p>
+            Richard-Toll est une ville riche d'histoire, de culture et de traditions.
+            Cette collection a été créée pour permettre à chacun de porter fièrement
+            son appartenance à la ville.
+          </p>
+          <p>
+            Chaque design s'inspire des symboles qui font la richesse du territoire : le fleuve Sénégal, la canne à sucre, les oiseaux du Djoudj ainsi que les traditions musicales et culturelles qui font la fierté de Richard-Toll.
+          </p>
+          <a href="#boutique" class="btn btn-outline">Voir la collection</a>
+        </div>
+        <div class="histoire-icons reveal-right">
+          <div class="icon-card">
+            <div class="icon-symbol"><i class="fa-solid fa-water"></i></div>
+            <h4>Le Fleuve Sénégal</h4>
+            <p>Source de vie et d'identité pour toute la région.</p>
+          </div>
+          <div class="icon-card">
+            <div class="icon-symbol"><i class="fa-solid fa-seedling"></i></div>
+            <h4>La Canne à Sucre</h4>
+            <p>Symbole de l'industrie et de la prospérité locale.</p>
+          </div>
+          <div class="icon-card">
+            <div class="icon-symbol"><i class="fa-solid fa-feather-pointed"></i></div>
+            <h4>Parc du Djoudj</h4>
+            <p>Sanctuaire mondial des oiseaux migrateurs.</p>
+          </div>
+          <div class="icon-card">
+            <div class="icon-symbol"><i class="fas fa-drum"></i></div>
+            <h4>Culture & Traditions</h4>
+            <p>Les rythmes, les danses et les traditions qui font vivre l'âme de Richard-Toll.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOUTIQUE ========== -->
+  <section class="boutique" id="boutique">
+    <div class="container">
+      <div class="section-label reveal-fade">Boutique</div>
+      <h2 class="section-title centered reveal-fade">La Collection</h2>
+
+      <div class="products-grid">
+
+        <!-- PRODUIT 1 : T-SHIRT -->
+        <div class="product-card reveal-up" data-product="tshirt">
+          <div class="product-image-wrap">
+            <img
+              src="images/blanc.jpg"
+              alt="T-shirt Richard Toll"
+              class="product-img"
+              id="tshirt-img"
+            />
+            <div class="product-badge">Bestseller</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">T-Shirt Richard Toll</h3>
+            <p class="product-price">7 000 <span>FCFA</span></p>
+            <div class="color-selector">
+              <p class="color-label">Couleur :</p>
+              <div class="color-options">
+                <label class="color-opt active" title="Blanc">
+                  <input type="radio" name="tshirt-color" value="blanc" checked />
+                  <span class="color-swatch" style="background:#F5F5F0; border:2px solid #ccc;"></span>
+                  <span class="color-name">Blanc</span>
+                </label>
+                <label class="color-opt" title="Bleu">
+                  <input type="radio" name="tshirt-color" value="bleu" />
+                  <span class="color-swatch" style="background:#1a3a6b;"></span>
+                  <span class="color-name">Bleu</span>
+                </label>
+                <label class="color-opt" title="Rouge">
+                  <input type="radio" name="tshirt-color" value="rouge" />
+                  <span class="color-swatch" style="background:#C0392B;"></span>
+                  <span class="color-name">Rouge</span>
+                </label>
+                <label class="color-opt" title="Noir">
+                  <input type="radio" name="tshirt-color" value="noir" />
+                  <span class="color-swatch" style="background:#111111;"></span>
+                  <span class="color-name">Noir</span>
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-add-cart">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 01-8 0"/><line x1="12" y1="15" x2="12" y2="19"/><line x1="10" y1="17" x2="14" y2="17"/>
+              </svg>
+              Ajouter au panier
+            </button>
+          </div>
+        </div>
+
+        <!-- PRODUIT 2 : TOTE BAG -->
+        <div class="product-card reveal-up delay-1" data-product="totebag">
+          <div class="product-image-wrap">
+            <img src="images/tod1.jpg" alt="Tote Bag Richard Toll" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Tote Bag</h3>
+            <p class="product-price">3 000 <span>FCFA</span></p>
+            <p class="product-desc">Sac en toile 100% coton. Design exclusif inspiré de la ville de Richard-Toll.</p>
+            <button class="btn btn-add-cart">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 01-8 0"/><line x1="12" y1="15" x2="12" y2="19"/><line x1="10" y1="17" x2="14" y2="17"/>
+              </svg>
+              Ajouter au panier
+            </button>
+          </div>
+        </div>
+
+        <!-- PRODUIT 3 : CASQUETTE NOIRE -->
+        <div class="product-card reveal-up delay-2" data-product="cap-noir">
+          <div class="product-image-wrap cap-hover-wrap">
+            <img src="images/gotblk.png" alt="Casquette Noire Richard Toll" class="product-img cap-default" />
+            <img src="images/Fnoir.jpeg" alt="Casquette Noire portée" class="product-img cap-model" />
+            <div class="hover-label">Voir porté →</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casquette — Noir</h3>
+            <p class="product-price">5 000 <span>FCFA</span></p>
+            <p class="product-desc">Broderie exclusive. Ajustable. Qualité premium.</p>
+            <button class="btn btn-add-cart">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 01-8 0"/><line x1="12" y1="15" x2="12" y2="19"/><line x1="10" y1="17" x2="14" y2="17"/>
+              </svg>
+              Ajouter au panier
+            </button>
+          </div>
+        </div>
+
+        <!-- PRODUIT 4 : CASQUETTE BLANCHE -->
+        <div class="product-card reveal-up" data-product="cap-blanc">
+          <div class="product-image-wrap cap-hover-wrap">
+            <img src="images/gotblanc.png" alt="Casquette Blanche Richard Toll" class="product-img cap-default" />
+            <img src="images/Fblanc.jpeg" alt="Casquette Blanche portée" class="product-img cap-model" />
+            <div class="hover-label">Voir porté →</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casquette — Blanc</h3>
+            <p class="product-price">5 000 <span>FCFA</span></p>
+            <p class="product-desc">Broderie exclusive. Ajustable. Qualité premium.</p>
+            <button class="btn btn-add-cart">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 01-8 0"/><line x1="12" y1="15" x2="12" y2="19"/><line x1="10" y1="17" x2="14" y2="17"/>
+              </svg>
+              Ajouter au panier
+            </button>
+          </div>
+        </div>
+
+        <!-- PRODUIT 5 : CASQUETTE ROUGE -->
+        <div class="product-card reveal-up delay-1" data-product="cap-rouge">
+          <div class="product-image-wrap cap-hover-wrap">
+            <img src="images/gotred.png" alt="Casquette Rouge Richard Toll" class="product-img cap-default" />
+            <img src="images/Hred.jpg" alt="Casquette Rouge portée" class="product-img cap-model" />
+            <div class="hover-label">Voir porté →</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Casquette — Rouge</h3>
+            <p class="product-price">5 000 <span>FCFA</span></p>
+            <p class="product-desc">Broderie exclusive. Ajustable. Qualité premium.</p>
+            <button class="btn btn-add-cart">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 01-8 0"/><line x1="12" y1="15" x2="12" y2="19"/><line x1="10" y1="17" x2="14" y2="17"/>
+              </svg>
+              Ajouter au panier
+            </button>
+          </div>
+        </div>
+
+        <!-- PRODUIT 6 : TOTE BAG 2 -->
+        <div class="product-card reveal-up delay-2" data-product="bracelet">
+          <div class="product-image-wrap">
+            <img src="images/bracelet.png" alt="Tote Bag Richard Toll" class="product-img" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">bracelet</h3>
+            <p class="product-price">2 000 <span>FCFA</span></p>
+            <p class="product-desc">Portez fièrement les couleurs de Richard-Toll avec ce bracelet unique, conçu pour représenter la culture, l'histoire et l'identité de notre ville.</p>
+            <button class="btn btn-add-cart">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 01-8 0"/><line x1="12" y1="15" x2="12" y2="19"/><line x1="10" y1="17" x2="14" y2="17"/>
+              </svg>
+              Ajouter au panier
+            </button>
+          </div>
+        </div>
+
+      </div><!-- end products-grid -->
+    </div>
+  </section>
+
+  <!-- ========== POURQUOI NOUS ========== -->
+  <section class="pourquoi">
+    <div class="container">
+      <div class="section-label reveal-fade">Nos valeurs</div>
+      <h2 class="section-title centered reveal-fade">Pourquoi choisir<br /><em>Richard Toll ?</em></h2>
+      <div class="values-grid">
+        <div class="value-card reveal-up">
+          <div class="value-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h4>Identité locale</h4>
+          <p>Chaque pièce célèbre l'identité et la fierté de Richard-Toll et de sa région.</p>
+        </div>
+        <div class="value-card reveal-up delay-1">
+          <div class="value-icon"><i class="fa-solid fa-palette"></i></div>
+          <h4>Culture</h4>
+          <p>Des designs pensés pour refléter la richesse culturelle et historique du territoire.</p>
+        </div>
+        <div class="value-card reveal-up delay-2">
+          <div class="value-icon"><i class="fa-solid fa-star"></i></div>
+          <h4>Qualité</h4>
+          <p>Des matières sélectionnées avec soin pour un confort et une durabilité optimaux.</p>
+        </div>
+        <div class="value-card reveal-up delay-3">
+          <div class="value-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h4>Livraison rapide</h4>
+          <p>Expédition partout au Sénégal. Commandez directement via WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ÉDITO — IMAGE + TEXTE (remplace témoignages) ========== -->
+  <section class="edito">
+    <div class="edito-inner">
+      <div class="edito-image reveal-left">
+        <!-- Remplace blanc.jpg par ton image modèle si tu veux (ex: modele1.jpg) -->
+        <img src="images/porte.jpeg" alt="Richard Toll — Porter une fierté" />
+        <div class="edito-image-label">Collection 2026</div>
+      </div>
+      <div class="edito-content reveal-right">
+        <div class="section-label">L'esprit de la marque</div>
+        <h2 class="edito-title">Porter<br /><em>une fierté.</em></h2>
+        <p class="edito-text">
+          Richard-Toll n'est pas qu'un lieu — c'est une émotion, une appartenance,
+          une identité que l'on porte avec soin. Chaque pièce de cette collection
+          est pensée pour ceux qui veulent exprimer, à travers leur style, leur
+          attachement à une ville qui a façonné leur histoire.
+        </p>
+        <p class="edito-text">
+          Des matières sélectionnées. Des designs pensés localement. Une marque
+          qui grandit avec sa communauté, au Sénégal et au-delà.
+        </p>
+        <div class="edito-stats">
+          <div class="stat">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Produits exclusifs</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Made in Sénégal</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Fierté locale</span>
+          </div>
+        </div>
+        <a href="#boutique" class="btn btn-outline-white">Voir la collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal-fade">Nous joindre</div>
+      <h2 class="section-title centered reveal-fade">Contact</h2>
+      <p class="contact-subtitle reveal-fade">Vous avez une question ? Une commande personnalisée ? Écrivez-nous directement.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card primary reveal-up">
+          <div class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <h4>WhatsApp</h4>
+          <p>+221 76 179 42 36</p>
+          <a href="https://wa.me/221761794236?text=Bonjour%20Richard%20Toll" target="_blank" class="btn btn-green">
+            Envoyer un message
+          </a>
+        </div>
+
+        <div class="contact-card reveal-up delay-1">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h4>Email</h4>
+          <p>contact@richardtoll.sn</p>
+          <a href="mailto:contact@richardtoll.sn" class="btn btn-outline-dark">Envoyer un email</a>
+        </div>
+
+        <div class="contact-card reveal-up delay-2">
+          <div class="contact-icon"><i class="fa-solid fa-share-nodes"></i></div>
+          <h4>Réseaux sociaux</h4>
+          <p>Suivez-nous pour les nouveautés</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/walo_the_world?utm_source=qr" target="_blank" class="social-btn" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="TikTok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">RICHARD TOLL</span>
+          <p>Terre de culture, terre d'avenir.</p>
+        </div>
+        <div class="footer-links-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#boutique">Boutique</a></li>
+            <li><a href="#histoire">Notre Histoire</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="https://wa.me/221761794236" target="_blank">+221 76 179 42 36 </a></li>
+            <li><a href="mailto:contact@richardtoll.sn">contact@richardtoll.sn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 RICHARD TOLL. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a href="https://wa.me/221761794236?text=Bonjour%20Richard%20Toll" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- ========== PANIER DRAWER ========== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Panier">
+    <div class="cart-header">
+      <h3>MON PANIER</h3>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span class="cart-total-label">Total</span>
+        <span class="cart-total-amount" id="cartTotalAmount">0 FCFA</span>
+      </div>
+      <a href="#" class="cart-checkout" id="cartCheckout" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Commander sur WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
