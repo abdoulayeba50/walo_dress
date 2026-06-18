@@ -165,10 +165,30 @@ document.head.appendChild(styleTag);
 const PRODUCTS = {
   'tshirt':    { name: 'T-Shirt Richard Toll',  price: 6000, image: 'images/blanc.jpg' },
   'totebag':   { name: 'Tote Bag Richard Toll', price: 3000, image: 'images/tod1.jpg'  },
-  'cap-noir':  { name: 'Casquette — Noir',       price: 5000, image: 'images/capnoir.jpg'  },
-  'cap-blanc': { name: 'Casquette — Blanc',      price: 5000, image: 'images/capblanc.jpg' },
-  'cap-rouge': { name: 'Casquette — Rouge',      price: 5000, image: 'images/caprouge.jpg' },
+
+  'cap-noir':  { name: 'Casquette — Noir',  price: 5000, image: 'images/capnoir.jpg'  },
+  'cap-blanc': { name: 'Casquette — Blanc', price: 5000, image: 'images/capblanc.jpg' },
+  'cap-rouge': { name: 'Casquette — Rouge', price: 5000, image: 'images/caprouge.jpg' },
+
   'bracelet':  { name: 'Bracelet Richard Toll', price: 2000, image: 'images/bracelet.png' },
+
+  'haut-blanc': {
+    name: 'Haut Femme — Blanc',
+    price: 6000,
+    image: 'images/fwhite.jpg'
+  },
+
+  'haut-noir': {
+    name: 'Haut Femme — Noir',
+    price: 6000,
+    image: 'images/fblack.jpg'
+  },
+
+  'haut-rouge': {
+    name: 'Haut Femme — Rouge',
+    price: 6000,
+    image: 'images/fred.jpg'
+  }
 };
 
 let cart = [];
